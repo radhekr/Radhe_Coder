@@ -5,7 +5,7 @@ if (!$conn) {
     die('Connection failed:' . mysqli_connect_error());
 } else {
     $myid = $_GET['myvariable'];
-    $query = "DELETE FROM p1_form WHERE id='$myid'";
+    $query = "DELETE p1_form.*, emp.* FROM p1_form INNER JOIN emp ON p1_form.id = emp.id WHERE p1_form.id='$myid'";
     $send = mysqli_query($conn, $query);
     if ($send) {
         header('location: details.php');
