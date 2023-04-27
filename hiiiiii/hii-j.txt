@@ -1,4 +1,13 @@
-Job seeker with B-tech currently living in Bangalore--
+Hello mam or sir
+Hope you are doing well
+###############I am a Fresher.  I can join immediately and can relocate to any place.
+
+I am looking for a Website Developer or PHP Developer role. I am fresher and I have done B.Tech in Computer Science and Engineering in 2022 and I have good knowledge in Core Java, Programming, MySQL, JDBC, HTML, CSS PHP and Basics of JavaScript.
+
+Would love to know if there is any opportunity for me.
+Attached my resume for your reference.
+
+Job seeker with B-tech currently living in Bangalore
 :- Grue sir :- Driev link ( https://drive.google.com/folderview?id=14W4CCkrqg0Ol4-ekG7BwlTb7cATaUPW5 )
 Hello Ma'am,
 Hope you are doing well
@@ -861,7 +870,28 @@ class Main{
    }
 }
 
--------------------------------------------------------------  ( Prime No in range )
+------------------------------------------------------------------------------------------------------------  ( Prime No in range )
+import java.util.Scanner;
+class Main{
+	public static void main(String[] args)
+	{
+		System.out.println("Enter any Numebr");
+         Scanner sc=new Scanner(System.in);
+    		int n=sc.nextInt();
+    	for(int i=2; i<n; i++)
+		{
+		  if(n%i==0)
+		  {
+			  System.out.println(n+" is not a Prime Number");
+			  return;
+		  }
+		}
+		System.out.println(n+" is a Prime Numebr");
+
+	}
+}
+
+---------------------------------------------------------------------------------------------------------------  ( Prime No in range )
 
 import java.util.Scanner;
 class Main{
@@ -1863,19 +1893,18 @@ class Main{
 // -----------------------------------------------------------------------------------------( reverse String from start mid last by index also )---------
 import java.util.Scanner;
 class Main{
-    public static String getRevStr(String str) {
+    static String getRevStr(String str) {
     int len = str.length();
-    if (len < 2) {
-        return str; // return the original string if it's too short
+        
+    char[] ch = str.toCharArray();
+
+    for (int i = 0, j = 4; i < j; i++, j--) {
+
+        char temp = ch[i];
+        ch[i] = ch[j];
+        ch[j] = temp;
     }
-    int mid = len / 2;
-    char[] chars = str.toCharArray();
-    for (int i = 0, j = mid; i < j; i++, j--) {
-        char temp = chars[i];
-        chars[i] = chars[j];
-        chars[j] = temp;
-    }
-    return new String(chars);
+    return new String(ch);
 }
     public static void main(String[] args)
     {
@@ -2277,17 +2306,6 @@ System.out.println(sbig);
 ========================================================================================================================================================================
                                                     ............................( Git-hub ).........................
 =========================================================================================================================================================================
-----git init
-----git add                                                               for checking.........
-----git config --global user.name"enter password of git"                                  git branch
-----git config --global user.email"asrkfr@gmail.com"                                      git branch main
-----git status                                                                            git checkout Main
-----git comit-m"first programming"                                                        add // commit // push
-----git remote add orgin link                                                             git Marge Main...............................
-----git pust
-
-
-
 Email:- radhekumarfromrajgir@gmail.com
 radhekr.... User Name
 radhekr@783...... Password
@@ -2297,6 +2315,9 @@ https://github.com/radhekr/Radhe_Coder.git
 
 
 --------------------------------------------------------------(to add project)------......................
+--------------------------------------------for mearge first select brnach.................................
+radhekr.... User Name
+radhekr@783...... Password
 git init                                    for initilizeing the file on git...............................
 git add .                                   to add all files......
 git commit -m                               for commit 
@@ -2304,12 +2325,10 @@ git remote add                              origin link
 git push origin master
 git push origin master --force
 
-
---------------------------------------------for mearge first select brnach.................................
 git merge main
 
 -----------------------------------------------------------------------------------------------------------git config --global user.name radhekr
-git config --golbal user.email rahdekumarfromrajgir@gial.com           to check ...........
+git config --global user.email rahdekumarfromrajgir@gial.com           to check ...........
 git config --global user.name
 git config --global user.email
 code .                                                                  to open vs code.....
@@ -2350,20 +2369,65 @@ $Delete_query="DELETE FORM demo WHERE id='$id'";
 
 
 // =============================================================================================================
-// CREATE TABLE student(id int primary key, name varchar(55), age int, gender varchar(11));
-// ALTER TABLE student ADD email VARCHAR(111);
-// DROP TABLE student;
-// TRUNCATE TABLE student;
-// INSERT INTO student(id,name,age,gender) VALUES(1,'Radhe kumar',25,'male');
-// UPDATE student SET age=26 WHERE ID=1;
-// DELETE FROM students WHERE id=1;
-// GRANT SELECT, INSERT, UPDATE ON studnets TO analyst;
-// REVOKE SELECT ON student FROM guest;
-// =======================================================================================================
+//CREATE TABLE student(id int primary key,name varchar(33), email varchar(33), address varchar(33), mobile_No varchar(33));
+//INSERT INTO student(id,name,email,address,mobile_No) VALUES(1,'RADHE KUMAR','radhe@gmail.com','shiv gali rajgir',9876543345);
+//DELETE FROM student where id=1;
+//UPDATE sutdent SET email=radhekr@gmail.com where id=1;
+//DROP TABLE student;
+//TRUNCATE TABLE student;
+//ALTER TABLE student ADD course varchar(33) Not Null;
+//ALTER TABLE emp modify Ename varchar(22);
+//ALTER TABLE emp Rename coloum Ename to Pname;
+//ALTER TABLE emp drop column Ename;
+//DROP TABLE emp;               ( to delete with structure )
+// PURGE TABLE emp;            ( to delete from recycle bin )
+// FLASHBACK TABLE emp;       ( to get back )
+
+//GRANT SELECT, INSERT, UPDATE ON studnets TO analyst;
+//REVOKE SELECT ON student FROM guest
+
+//$Insert_Query=INSERT INTO demo(name,email,password,mobno) VALUES ($Name,$Email,$Password,$Mobno);
+//$Update_query="UPDATE demo SET name='$Name',pass='$Pass',mobno='$Mobno' WHERE id='$id'";
+//$id=GET['id'];
+//$Delete_query="DELETE FORM demo WHERE id='$id'";
 
 ========================================================================================================================================================================
-                                                    ............................( Git-hub End ).........................
+                                                    ............................( Leveral start ).........................
 =======================================================================================================================================================================
+1.----------- install first [ google[ xamp(Goo)- composer(Goo)- larval( composer global require laravel/installer) ]
+2.---- create folder open cmd type laravel [check- php artisan serve     OR    laravel      OR     laravel --versioin      CREATE     LARAVEL NEW PROJECT_1 ].....
+3.-------------localhost:8000 [ to see on the chrom ]
 
+
+========================================================================================================================================================================
+                                                    ............................( JAVA SCRIPT SEARCH OPTION fot table ).........................
+=======================================================================================================================================================================
+===> Keep this in inside input [  id="myinput" onkeyup="searchfun()"  ]
+
+    <script>
+        function searchfun()
+        {
+            let filter=document.getElementById("myinput").value.toUpperCase();
+            let mytable=document.getElementById ("mytable");
+            let tr=mytable.getElementsByTagName('tr');
+            for(var i=1;i<<length; i++)
+            {
+                let td=tr[i].getElementsByTagName('td')[0];
+                if(td)
+                {
+                    let text=td.textContent || td.innerHTML;
+                    if(text.toUpperCase().indexOf(filter)>-1)
+                    {
+                        tr[i].style.display="";
+                    }
+                    else{
+                        tr[i].style.display="none"
+                    }
+                }
+            }
+        }
+    </script>
+==========================================================================================================================
+        
 
 
